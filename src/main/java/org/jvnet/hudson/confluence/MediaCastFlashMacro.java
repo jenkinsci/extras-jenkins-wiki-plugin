@@ -31,8 +31,16 @@ public class MediaCastFlashMacro extends BaseMacro {
 
     public String execute(Map params, String body, RenderContext renderContext)
             throws MacroException {
+
+        Integer id = (Integer) renderContext.getParam("mediacast-id");
+        if(id==null)    id = Integer.valueOf(0);
+        else            id = Integer.valueOf(id.intValue()+1);
+        renderContext.getParams().put("mediacast-id",id);
+
         Map context = MacroUtils.defaultVelocityContext();
+        context.put("id", id);
         context.put("url", params.get("url"));
+        context.put("style", params.get("style"));
         context.put("width", defaulted(params, "width", "470"));
         context.put("height", defaulted(params, "height", "350"));
         return VelocityUtils.getRenderedTemplate("org/jvnet/hudson/confluence/mediacast-flash.vm", context);
