@@ -1,15 +1,13 @@
 package org.jvnet.hudson.confluence;
 
-import java.util.Map;
-
-import com.atlassian.renderer.RenderContext;
-import com.atlassian.renderer.v2.macro.BaseMacro;
-import com.atlassian.renderer.v2.macro.MacroException;
-import com.atlassian.renderer.v2.RenderMode;
-import com.atlassian.confluence.pages.PageManager;
-import com.atlassian.confluence.spaces.SpaceManager;
 import com.atlassian.confluence.renderer.radeox.macros.MacroUtils;
 import com.atlassian.confluence.util.velocity.VelocityUtils;
+import com.atlassian.renderer.RenderContext;
+import com.atlassian.renderer.v2.RenderMode;
+import com.atlassian.renderer.v2.macro.BaseMacro;
+import com.atlassian.renderer.v2.macro.MacroException;
+
+import java.util.Map;
 
 /**
  * Puts the link to Mediacast resource.
@@ -19,21 +17,6 @@ import com.atlassian.confluence.util.velocity.VelocityUtils;
  * {mediacast-flash:width=100|height=50|url=http://mediacast.sun.com/users/RamaPulavarthi/media/Hudson-Intro.swf}
  */
 public class MediaCastFlashMacro extends BaseMacro {
-
-    // We just have to define the variables and the setters, then Spring injects the correct objects for us to use. Simple and efficient.
-    // You just need to know *what* you want to inject and use.
-
-    private PageManager pageManager;
-    private SpaceManager spaceManager;
-
-    public void setPageManager(PageManager pageManager) {
-        this.pageManager = pageManager;
-    }
-
-    public void setSpaceManager(SpaceManager spaceManager) {
-        this.spaceManager = spaceManager;
-    }
-
     public boolean isInline() {
         return false;
     }
