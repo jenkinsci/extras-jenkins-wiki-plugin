@@ -9,7 +9,6 @@
     </plugin-info>
 
     <macro name='mediacast-flash' class='org.jvnet.hudson.confluence.MediaCastFlashMacro' key='mediacast-flash-macro'>
-        <!-- TODO: Add macro description -->
-        <!-- <description></description> -->
+      <description>Put a link to a flash from Sun MediaCast server</description>
     </macro>
 </atlassian-plugin>
