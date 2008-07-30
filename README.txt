@@ -40,3 +40,9 @@ http://maven.apache.org/plugins/maven-resources-plugin/examples/filter.html
 Open one shell and run "mvn -P plugin-debug" and keep it going
 On another shell, run "mvn atlassian-pdk:install"
 Go to http://localhost:1990/confluence/
+
+** POINTERS **
+
+http://docs.atlassian.com/atlassian-renderer/3.19/apidocs/index.html
+http://confluence.atlassian.com/display/DOC/Writing+Confluence+Plugins
+http://confluence.atlassian.com/display/DEVNET/How+to+Build+an+Atlassian+Plugin
