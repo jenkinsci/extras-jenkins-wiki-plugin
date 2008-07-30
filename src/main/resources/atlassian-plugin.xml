@@ -1,0 +1,15 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="Hudson Wiki Macros">
+    <plugin-info>
+        <description>Macro for Hudson Wiki</description>
+        <version>1.0-SNAPSHOT</version>
+        <!-- TODO: Add vendor details -->
+        <!--
+        <vendor name="Example Company" url="http://www.example.com"/>
+        -->
+    </plugin-info>
+
+    <macro name='mediacast-flash' class='org.jvnet.hudson.confluence.MediaCastFlashMacro' key='mediacast-flash-macro'>
+        <!-- TODO: Add macro description -->
+        <!-- <description></description> -->
+    </macro>
+</atlassian-plugin>

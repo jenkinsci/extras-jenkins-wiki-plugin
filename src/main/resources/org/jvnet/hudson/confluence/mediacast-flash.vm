@@ -1,0 +1,13 @@
+<div id="player-holder" style="align:center">
+    Loading the player...
+</div>
+<script src="http://mediacast.sun.com/javascripts/swfobject.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var so = new SWFObject('http://mediacast.sun.com/flash/jw-flv-player/mediaplayer.swf','mediaplayer','$width','$height','7');
+  so.addParam('allowfullscreen','true');
+  so.addVariable('width','$width');
+  so.addVariable('height','$height');
+  so.addVariable('file','$url');
+  so.write('player-holder');
+</script>
