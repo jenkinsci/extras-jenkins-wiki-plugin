@@ -14,8 +14,7 @@
     <groupId>test</groupId>
     <artifactId>hudson-wiki-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-    <name><!-- TODO: Add a name for your plugin --></name>
+    <name>Hudson Wiki Plugin</name>
     <packaging>atlassian-plugin</packaging>
 
     <properties>
